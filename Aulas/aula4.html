@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrizes</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Matrizes</h1>
+</header>
+
+<main>
+
+    <h2>Vídeo da Aula</h2>
+
+    <iframe width="800"
+            height="450"
+            src="https://www.youtube.com/embed/Hv0AfD-3YTM"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h2>Exercícios</h2>
+
+    <div class="card">
+        <h3>Exercício 1</h3>
+
+        <p>
+           Leia uma matriz 2x2 e mostre todos os seus elementos.
+        </p>
+
+        <details>
+            <summary>Ver Resolução</summary>
+
+<pre>
+    
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mat[2][2];
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            cin >> mat[i][j];
+        }
+    }
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            cout << mat[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+        </details>
+    </div>
+    <div class="card">
+    <h3>Exercício 2</h3>
+
+    <p>
+        Leia uma matriz 3x3 e calcule a soma de todos os elementos.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mat[3][3];
+    int soma = 0;
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            cin >> mat[i][j];
+            soma += mat[i][j];
+        }
+    }
+
+    cout << "Soma = " << soma;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+    <div class="card">
+    <h3>Exercício 3</h3>
+
+    <p>
+        Leia uma matriz 3x3 e mostre apenas os elementos da diagonal principal.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mat[3][3];
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            cin >> mat[i][j];
+        }
+    }
+
+    for(int i = 0; i < 3; i++){
+        cout << mat[i][i] << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+</div>
+    <div class="card">
+    <h3>Exercício 4</h3>
+
+    <p>
+        Leia uma matriz 3x3 e conte quantos números pares existem nela.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mat[3][3];
+    int pares = 0;
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            cin >> mat[i][j];
+
+            if(mat[i][j] % 2 == 0){
+                pares++;
+            }
+        }
+    }
+
+    cout << "Quantidade de pares: " << pares;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 5</h3>
+
+    <p>
+        Leia uma matriz 3x3 e encontre o maior elemento.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int mat[3][3];
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            cin >> mat[i][j];
+        }
+    }
+
+    int maior = mat[0][0];
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+
+            if(mat[i][j] > maior){
+                maior = mat[i][j];
+            }
+
+        }
+    }
+
+    cout << "Maior valor: " << maior;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 6</h3>
+
+    <p>
+       Leia duas matrizes 2x2 e crie uma terceira matriz contendo a soma das duas.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int A[2][2];
+    int B[2][2];
+    int C[2][2];
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            cin >> A[i][j];
+        }
+    }
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            cin >> B[i][j];
+        }
+    }
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            C[i][j] = A[i][j] + B[i][j];
+        }
+    }
+
+    cout << "Matriz soma:" << endl;
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 2; j++){
+            cout << C[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+
+    <br>
+
+    <a href="../index.html">
+        <button>Voltar</button>
+    </a>
+
+</main>
+    <footer>
+    <p>Projeto desenvolvido por:</p>
+
+    <p>
+        Alex Junior<br>
+        Gustavo Zanco<br>
+        Matheus Barraza<br>
+        Tainara Teixeira<br>
+        Daniel Santana
+    </p>
+
+    <p>Ciência da Computação - 2026</p>
+    </footer>
+
+</body>
+</html>

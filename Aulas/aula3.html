@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Vetores</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Vetores</h1>
+</header>
+
+<main>
+
+    <h2>Vídeo da Aula</h2>
+
+    <iframe width="800"
+            height="450"
+            src="https://www.youtube.com/embed/wtl5bgzPdcc"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h2>Exercícios</h2>
+
+    <div class="card">
+        <h3>Exercício 1</h3>
+
+        <p>
+           Crie um vetor com 5 posições, leia os 5 valores e mostre todos eles.
+        </p>
+
+        <details>
+            <summary>Ver Resolução</summary>
+
+<pre>
+    
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int vet[5];
+
+    for(int i = 0; i < 5; i++){
+        cin >> vet[i];
+    }
+
+    for(int i = 0; i < 5; i++){
+        cout << vet[i] << endl;
+    }
+
+    return 0;
+}
+</pre>
+
+        </details>
+    </div>
+    <div class="card">
+    <h3>Exercício 2</h3>
+
+    <p>
+        Leia 10 números em um vetor e mostre a soma de todos os elementos.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int vet[10];
+    int soma = 0;
+
+    for(int i = 0; i < 10; i++){
+        cin >> vet[i];
+        soma += vet[i];
+    }
+
+    cout << "Soma: " << soma;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+    <div class="card">
+    <h3>Exercício 3</h3>
+
+    <p>
+        Leia 5 números e mostre o maior valor armazenado no vetor.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int vet[5];
+
+    for(int i = 0; i < 5; i++){
+        cin >> vet[i];
+    }
+
+    int maior = vet[0];
+
+    for(int i = 1; i < 5; i++){
+        if(vet[i] > maior){
+            maior = vet[i];
+        }
+    }
+
+    cout << "Maior valor: " << maior;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+</div>
+    <div class="card">
+    <h3>Exercício 4</h3>
+
+    <p>
+        Leia 8 números e conte quantos deles são pares.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int vet[8];
+    int pares = 0;
+
+    for(int i = 0; i < 8; i++){
+        cin >> vet[i];
+
+        if(vet[i] % 2 == 0){
+            pares++;
+        }
+    }
+
+    cout << "Quantidade de pares: " << pares;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 5</h3>
+
+    <p>
+        Leia 6 números e mostre os elementos na ordem inversa.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int vet[6];
+
+    for(int i = 0; i < 6; i++){
+        cin >> vet[i];
+    }
+
+    for(int i = 5; i >= 0; i--){
+        cout << vet[i] << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 6</h3>
+
+    <p>
+       Leia um vetor com 5 números e um número qualquer. Verifique se esse número existe no vetor.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int vet[5];
+    int procura;
+    bool encontrou = false;
+
+    for(int i = 0; i < 5; i++){
+        cin >> vet[i];
+    }
+
+    cin >> procura;
+
+    for(int i = 0; i < 5; i++){
+        if(vet[i] == procura){
+            encontrou = true;
+        }
+    }
+
+    if(encontrou){
+        cout << "Numero encontrado";
+    }
+    else{
+        cout << "Numero nao encontrado";
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+
+    <br>
+
+    <a href="../index.html">
+        <button>Voltar</button>
+    </a>
+
+</main>
+    <footer>
+    <p>Projeto desenvolvido por:</p>
+
+    <p>
+        Alex Junior<br>
+        Gustavo Zanco<br>
+        Matheus Barraza<br>
+        Tainara Teixeira<br>
+        Daniel Santana
+    </p>
+
+    <p>Ciência da Computação - 2026</p>
+    </footer>
+
+</body>
+</html>

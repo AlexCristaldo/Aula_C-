@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Struct</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Struct</h1>
+</header>
+
+<main>
+
+    <h2>Vídeo da Aula</h2>
+
+    <iframe width="800"
+            height="450"
+            src="https://www.youtube.com/embed/nAg7DzSs1j4"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h2>Exercícios</h2>
+
+    <div class="card">
+        <h3>Exercício 1</h3>
+
+        <p>
+            Crie uma struct chamada Pessoa contendo nome e idade. Mostre os dados na tela.
+        </p>
+
+        <details>
+            <summary>Ver Resolução</summary>
+
+<pre>
+    
+#include <iostream>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+};
+
+int main() {
+
+    Pessoa p;
+
+    p.nome = "Joao";
+    p.idade = 25;
+
+    cout << p.nome << endl;
+    cout << p.idade;
+
+    return 0;
+}
+
+</pre>
+
+        </details>
+    </div>
+    <div class="card">
+    <h3>Exercício 2</h3>
+
+    <p>
+        Crie uma struct Produto contendo nome e preço. Leia os dados pelo teclado e exiba-os.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+struct Produto {
+    string nome;
+    float preco;
+};
+
+int main() {
+
+    Produto p;
+
+    cin >> p.nome;
+    cin >> p.preco;
+
+    cout << "Produto: " << p.nome << endl;
+    cout << "Preco: " << p.preco;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+    <div class="card">
+    <h3>Exercício 3</h3>
+
+    <p>
+        Crie uma struct Aluno contendo nome e nota. Mostre os dados cadastrados.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+struct Aluno {
+    string nome;
+    float nota;
+};
+
+int main() {
+
+    Aluno a;
+
+    cin >> a.nome;
+    cin >> a.nota;
+
+    cout << a.nome << endl;
+    cout << a.nota;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+</div>
+    <div class="card">
+    <h3>Exercício 4</h3>
+
+    <p>
+        Crie um vetor de 3 alunos utilizando struct e mostre os nomes cadastrados.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+struct Aluno {
+    string nome;
+};
+
+int main() {
+
+    Aluno alunos[3];
+
+    for(int i = 0; i < 3; i++){
+        cin >> alunos[i].nome;
+    }
+
+    for(int i = 0; i < 3; i++){
+        cout << alunos[i].nome << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 5</h3>
+
+    <p>
+        Crie uma struct Carro contendo marca e ano. Cadastre dois carros e mostre suas informações.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+struct Carro {
+    string marca;
+    int ano;
+};
+
+int main() {
+
+    Carro carros[2];
+
+    for(int i = 0; i < 2; i++){
+        cin >> carros[i].marca;
+        cin >> carros[i].ano;
+    }
+
+    for(int i = 0; i < 2; i++){
+        cout << carros[i].marca << " ";
+        cout << carros[i].ano << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 6</h3>
+
+    <p>
+       Crie uma struct Funcionario contendo nome e salário. Mostre qual funcionário possui o maior salário.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+struct Funcionario {
+    string nome;
+    float salario;
+};
+
+int main() {
+
+    Funcionario f[2];
+
+    for(int i = 0; i < 2; i++){
+        cin >> f[i].nome;
+        cin >> f[i].salario;
+    }
+
+    if(f[0].salario > f[1].salario){
+        cout << f[0].nome;
+    }
+    else{
+        cout << f[1].nome;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+    <br>
+
+    <a href="../index.html">
+        <button>Voltar</button>
+    </a>
+
+</main>
+    <footer>
+    <p>Projeto desenvolvido por:</p>
+
+    <p>
+        Alex Junior<br>
+        Gustavo Zanco<br>
+        Matheus Barraza<br>
+        Tainara Teixeira<br>
+        Daniel Santana
+    </p>
+
+    <p>Ciência da Computação - 2026</p>
+    </footer>
+
+</body>
+</html>

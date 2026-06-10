@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ponteiros</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Ponteiros</h1>
+</header>
+
+<main>
+
+    <h2>Vídeo da Aula</h2>
+
+    <iframe width="800"
+            height="450"
+            src="https://www.youtube.com/embed/zanco"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h2>Exercícios</h2>
+
+    <div class="card">
+        <h3>Exercício 1</h3>
+
+        <p>
+            Crie uma variável inteira e mostre seu endereço de memória.
+        </p>
+
+        <details>
+            <summary>Ver Resolução</summary>
+
+<pre>
+    
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero = 10;
+
+    cout << &numero;
+
+    return 0;
+}
+
+</pre>
+
+        </details>
+    </div>
+    <div class="card">
+    <h3>Exercício 2</h3>
+
+    <p>
+        Crie um ponteiro apontando para uma variável inteira e mostre o valor armazenado.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero = 50;
+
+    int *p = &numero;
+
+    cout << *p;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+    <div class="card">
+    <h3>Exercício 3</h3>
+
+    <p>
+        Mostre o endereço armazenado em um ponteiro.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero = 25;
+
+    int *p = &numero;
+
+    cout << p;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+</div>
+    <div class="card">
+    <h3>Exercício 4</h3>
+
+    <p>
+        Utilize um ponteiro para alterar o valor de uma variável.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero = 10;
+
+    int *p = &numero;
+
+    *p = 100;
+
+    cout << numero;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 5</h3>
+
+    <p>
+        Leia um número e utilize um ponteiro para mostrar seu valor.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero;
+
+    cin >> numero;
+
+    int *p = &numero;
+
+    cout << *p;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 6</h3>
+
+    <p>
+       Crie duas variáveis inteiras e utilize um ponteiro para apontar para cada uma delas em momentos diferentes.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a = 10;
+    int b = 20;
+
+    int *p;
+
+    p = &a;
+    cout << *p << endl;
+
+    p = &b;
+    cout << *p << endl;
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+    <br>
+
+    <a href="../index.html">
+        <button>Voltar</button>
+    </a>
+
+</main>
+    <footer>
+    <p>Projeto desenvolvido por:</p>
+
+    <p>
+        Alex Junior<br>
+        Gustavo Zanco<br>
+        Matheus Barraza<br>
+        Tainara Teixeira<br>
+        Daniel Santana
+    </p>
+
+    <p>Ciência da Computação - 2026</p>
+    </footer>
+
+</body>
+</html>

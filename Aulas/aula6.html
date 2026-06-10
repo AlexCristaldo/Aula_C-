@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lista</h1>
+</header>
+
+<main>
+
+    <h2>Vídeo da Aula</h2>
+
+    <iframe width="800"
+            height="450"
+            src="https://www.youtube.com/embed/_zaFSINuWBU"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h2>Exercícios</h2>
+
+    <div class="card">
+        <h3>Exercício 1</h3>
+
+        <p>
+            Crie uma lista e adicione os valores 10, 20 e 30. Mostre todos os elementos.
+        </p>
+
+        <details>
+            <summary>Ver Resolução</summary>
+
+<pre>
+    
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main() {
+
+    list<int> lista;
+
+    lista.push_back(10);
+    lista.push_back(20);
+    lista.push_back(30);
+
+    for(int valor : lista){
+        cout << valor << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+        </details>
+    </div>
+    <div class="card">
+    <h3>Exercício 2</h3>
+
+    <p>
+        Adicione os valores 10, 20 e 30 em uma lista e mostre o primeiro elemento.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main() {
+
+    list<int> lista;
+
+    lista.push_back(10);
+    lista.push_back(20);
+    lista.push_back(30);
+
+    cout << lista.front();
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+    <div class="card">
+    <h3>Exercício 3</h3>
+
+    <p>
+        Adicione os valores 10, 20 e 30 em uma lista e mostre o último elemento.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main() {
+
+    list<int> lista;
+
+    lista.push_back(10);
+    lista.push_back(20);
+    lista.push_back(30);
+
+    cout << lista.back();
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+</div>
+    <div class="card">
+    <h3>Exercício 4</h3>
+
+    <p>
+        Adicione quatro valores em uma lista e informe quantos elementos ela possui.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main() {
+
+    list<int> lista;
+
+    lista.push_back(5);
+    lista.push_back(10);
+    lista.push_back(15);
+    lista.push_back(20);
+
+    cout << lista.size();
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 5</h3>
+
+    <p>
+        Crie uma lista com os valores 10, 20, 30 e remova o primeiro elemento.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main() {
+
+    list<int> lista;
+
+    lista.push_back(10);
+    lista.push_back(20);
+    lista.push_back(30);
+
+    lista.pop_front();
+
+    for(int valor : lista){
+        cout << valor << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 6</h3>
+
+    <p>
+       Crie uma lista com os valores 10, 20, 30 e remova o último elemento.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main() {
+
+    list<int> lista;
+
+    lista.push_back(10);
+    lista.push_back(20);
+    lista.push_back(30);
+
+    lista.pop_back();
+
+    for(int valor : lista){
+        cout << valor << endl;
+    }
+
+    return 0;
+}
+
+</pre>
+
+    </details>
+</div>
+
+    <br>
+
+    <a href="../index.html">
+        <button>Voltar</button>
+    </a>
+
+</main>
+    <footer>
+    <p>Projeto desenvolvido por:</p>
+
+    <p>
+        Alex Junior<br>
+        Gustavo Zanco<br>
+        Matheus Barraza<br>
+        Tainara Teixeira<br>
+        Daniel Santana
+    </p>
+
+    <p>Ciência da Computação - 2026</p>
+    </footer>
+
+</body>
+</html>

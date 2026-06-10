@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura de Decisão e Repetição</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Estrutura de Decisão e Repetição</h1>
+</header>
+
+<main>
+
+    <h2>Vídeo da Aula</h2>
+
+    <iframe width="800"
+            height="450"
+            src="https://www.youtube.com/embed/_OBWlBuaijE"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h2>Exercícios</h2>
+
+    <div class="card">
+        <h3>Exercício 1</h3>
+
+        <p>
+            Leia um número e informe se ele é positivo ou negativo.
+        </p>
+
+        <details>
+            <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num;
+
+    cin >> num;
+
+    if(num >= 0){
+        cout << "Positivo";
+    }
+    else{
+        cout << "Negativo";
+    }
+
+    return 0;
+}
+</pre>
+
+        </details>
+    </div>
+    <div class="card">
+    <h3>Exercício 2</h3>
+
+    <p>
+        Leia a idade de uma pessoa e informe se ela é maior ou menor de idade.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int idade;
+
+    cin >> idade;
+
+    if(idade >= 18){
+        cout << "Maior de idade";
+    }
+    else{
+        cout << "Menor de idade";
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+    <div class="card">
+    <h3>Exercício 3</h3>
+
+    <p>
+        Leia uma nota de 0 a 10 e mostre:
+
+        Aprovado (nota ≥ 6)
+        Recuperação (nota ≥ 4 e < 6)
+        Reprovado (nota < 4)
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    float nota;
+
+    cin >> nota;
+
+    if(nota >= 6){
+        cout << "Aprovado";
+    }
+    else if(nota >= 4){
+        cout << "Recuperacao";
+    }
+    else{
+        cout << "Reprovado";
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+
+</div>
+    <div class="card">
+    <h3>Exercício 4</h3>
+
+    <p>
+        Mostre os números de 1 até 10 usando um "for".
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    for(int i = 1; i <= 10; i++){
+        cout << i << endl;
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 5</h3>
+
+    <p>
+        Leia um número e mostre sua tabuada de 1 a 10.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num;
+
+    cin >> num;
+
+    for(int i = 1; i <= 10; i++){
+        cout << num << " x " << i
+             << " = " << num * i << endl;
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+</div>
+    <div class="card">
+    <h3>Exercício 6</h3>
+
+    <p>
+       Mostre os números de 10 até 1 utilizando while.
+    </p>
+
+    <details>
+        <summary>Ver Resolução</summary>
+
+<pre>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int i = 10;
+
+    while(i >= 1){
+        cout << i << endl;
+        i--;
+    }
+
+    return 0;
+}
+</pre>
+
+    </details>
+</div>
+
+    <br>
+
+    <a href="../index.html">
+        <button>Voltar</button>
+    </a>
+
+</main>
+    <footer>
+    <p>Projeto desenvolvido por:</p>
+
+    <p>
+        Alex Junior<br>
+        Gustavo Zanco<br>
+        Matheus Barraza<br>
+        Tainara Teixeira<br>
+        Daniel Santana
+    </p>
+
+    <p>Ciência da Computação - 2026</p>
+    </footer>
+
+</body>
+</html>
